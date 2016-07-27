@@ -1,0 +1,33 @@
+{
+  "name": "angular2-skeleton",
+  "version": "0.0.1",
+  "description": "Default angular2 app",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stigmatore/angular2-skeleton.git"
+  },
+  "keywords": [
+    "npm",
+    "angular"
+  ],
+  "author": "Stanislav Škubal <stana@folklorista.cz>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/stigmatore/angular2-skeleton/issues"
+  },
+  "homepage": "https://github.com/stigmatore/angular2-skeleton#readme"
+}
