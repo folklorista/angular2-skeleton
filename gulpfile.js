@@ -1,9 +1,12 @@
 var config = {
-	filesToConcatCssMain: "www/assets/**/*.css",
-	outputFolderCssJs: "www/cache",
-	filesToConcatJs: "www/assets/**/*.js",
-	filesBrowserSync: ["www/assets/**/*.css", "www/assets/**/*.js", "app/FrontModule/**/*.latte"],
-	proxy: "nas-projekt.cz:3000",
+	filesToConcatCssMain: "src/assets/css/*.css",
+	outputFolderCssJs: "src/cache",
+	filesToConcatJs: "src/assets/js/*.js",
+	filesBrowserSync: [
+		"src/assets/**/*.css",
+		"src/assets/**/*.js"
+	],
+	proxy: "localhost:3000",
 	production: true
 }
 
@@ -51,4 +54,10 @@ gulp.task("watchAssets", function() {
 	gulp.watch(config.filesToConcatJs, ["concatJs", browserSync.reload])
 });
 
-gulp.task("default", ["deleteCache", "concatCssMain", "concatJs", "watchAssets", "browser-sync"]);
+gulp.task("default", [
+	"deleteCache",
+	"concatCssMain",
+	"concatJs",
+	"watchAssets",
+	"browser-sync"
+]);
